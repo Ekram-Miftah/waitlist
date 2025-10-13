@@ -5,7 +5,6 @@ from pydantic import BaseModel, EmailStr
 import os
 from dotenv import load_dotenv
 
-# Assuming these imports exist in your project structure:
 from database import create_tables, get_db, WaitlistEntry
 from security import authenticate_admin
 from email_service import send_confirmation_email 
@@ -45,7 +44,7 @@ class AdminLoginResponse(BaseModel):
 
 origins = [
     "http://localhost:3000", # Allows local Next.js development
-    # Add your Vercel/live frontend URL here later
+   "https://waitfront-9bx17pq85-nop-600c2276.vercel.app/"
 ]
 
 app.add_middleware(
