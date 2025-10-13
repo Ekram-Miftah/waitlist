@@ -44,7 +44,7 @@ class AdminLoginResponse(BaseModel):
 
 origins = [
     "http://localhost:3000", # Allows local Next.js development
-   " https://waitfront.vercel.app/"
+   "https://waitfront.vercel.app/"
 ]
 
 app.add_middleware(
